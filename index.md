@@ -9,21 +9,15 @@ author_profile: true
 
 
 ### Recent Research Posts
-
+<div class="grid__wrapper">
 {% for post in site.news limit:4 %}
   {% unless post.hidden %}
     {% include archive-single.html type="grid" %}
   {% endunless %}
 {% endfor %}
+</div>
+<br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 
 [Research](https://sites.google.com/view/yhnam/research)
