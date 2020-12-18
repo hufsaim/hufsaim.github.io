@@ -7,13 +7,18 @@ main:
 #     url: /tags/
 #   - title: "Pages"
 #     url: /page-archive/
+
+  - title: "People"
+    url: /people/
   - title: "Research"
     url: /research/
   - title: "Publication"
     url: /publication/
-  - title: "People"
-    url: /people/
-  - title: "Calendar"
-    url: /calendar/
   - title: "News"
     url: /news/
+  - title: "Software"
+    url: /news/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Calendar"
+    url: /calendar/
