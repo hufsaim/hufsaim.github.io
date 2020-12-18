@@ -14,13 +14,7 @@ author_profile: true
 <br>
 
 
-[Research](https://sites.google.com/view/yhnam/research)
-- ML Applications for Medical Imaging
-- Quantitative Medical Imaging
-- Advanced MR Neuroimaging Techniques
-
-[Publication](https://scholar.google.co.kr/citations?hl=ko&user=UZcwGAoAAAAJ&view_op=list_works&sortby=pubdate)
-
+### "준비중입니다."
 
 <br>
 
