@@ -19,6 +19,6 @@ main:
   - title: "Software"
     url: /news/
   - title: "Teaching"
-    url: /teaching/
+    url: teaching.md
   - title: "Calendar"
     url: /calendar/
