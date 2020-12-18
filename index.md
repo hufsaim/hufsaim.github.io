@@ -4,7 +4,6 @@ author_profile: true
 ---
 
 
-### News
 <div class="grid__wrapper">
 {% for post in site.news limit:4 %}
   {% unless post.hidden %}
