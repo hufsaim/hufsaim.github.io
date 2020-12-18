@@ -4,11 +4,7 @@ author_profile: true
 ---
 
 
-
-[People](/people/)
-
-
-### Recent Research Posts
+### News
 <div class="grid__wrapper">
 {% for post in site.news limit:4 %}
   {% unless post.hidden %}
@@ -17,7 +13,6 @@ author_profile: true
 {% endfor %}
 </div>
 <br>
-
 
 
 [Research](https://sites.google.com/view/yhnam/research)
