@@ -219,7 +219,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll-ideal-image-slider
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -280,8 +279,6 @@ compress_html:
   ignore:
     envs: development
 
-# Ideal image slider
-iis_slider_array: []
 
 # Defaults
 defaults:
