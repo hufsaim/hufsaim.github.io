@@ -96,7 +96,7 @@ author:
   name             : "HUFSAIM"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "한국외국어대학교 바이오메디컬공학부 지능형 의료영상 연구실"
-  location         : "경기도 용인시 처인구 모현읍 외대로 81 바이오메디컬공학부 17035"
+  location         : "경기도 용인시 처인구 모현읍 외대로 81"
   email            : "yoonhonam@hufs.ac.kr"
   links:
     - label: "Email"
