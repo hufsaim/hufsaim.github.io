@@ -24,12 +24,12 @@ classes: wide
 
 ## 2020
 
-1. Radiomics may increase the prognostic value for survival in glioblastoma patients when combined with conventional clinical and genetic prognostic models. 
-    > Choi, Yangsean; Nam, Yoonho; Jang, Jinhee; Shin, Na-Young; Lee, Youn Soo; Ahn, Kook-Jin; Kim, Bum-soo; Park, Jae-Sung; Jeon, Sin-soo; Hong, Yong Gil;\
+1. ### Radiomics may increase the prognostic value for survival in glioblastoma patients when combined with conventional clinical and genetic prognostic models. 
+    > ***Choi, Yangsean; Nam, Yoonho; Jang, Jinhee; Shin, Na-Young; Lee, Youn Soo; Ahn, Kook-Jin; Kim, Bum-soo; Park, Jae-Sung; Jeon, Sin-soo; Hong, Yong Gil;***\
     European Radiology\
     [link](https://doi.org/10.1007/s00330-020-07335-1)
 
-1. Paramagnetic Rims in Multiple Sclerosis and Neuromyelitis Optica Spectrum Disorder: A Quantitative Susceptibility Mapping Study with 3-T MRI. 
+1. ### Paramagnetic Rims in Multiple Sclerosis and Neuromyelitis Optica Spectrum Disorder: A Quantitative Susceptibility Mapping Study with 3-T MRI.
     > Jang, Jinhee; Nam, Yoonho; Choi, Yangsean; Shin, Na-Young; An, Jae Young; Ahn, Kook-Jin; Kim, Bum-soo; Lee, Kwang-Soo; Kim, Woojun;\
     Journal of Clinical Neurology 16(4), 562
 
