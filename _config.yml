@@ -25,7 +25,7 @@ url                      : "https://hufsaim.github.io" # the base hostname & pro
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/img/logo_aim2.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/img/logo_aimtext.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 250
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "HUFSAIM"
-  avatar           : "" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/img/logo_hufs.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "한국외국어대학교 바이오메디컬공학부 지능형 의료영상 연구실"
   location         : "경기도 용인시 처인구 모현읍 외대로 81"
   email            : "yoonhonam@hufs.ac.kr"
