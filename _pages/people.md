@@ -8,6 +8,7 @@ classes: wide
 - [Yoonho Nam](https://yoonhonam.github.io/)
     - Assistant professor
     - [yoonhonam@hufs.ac.kr](mailto:yoonhonam@hufs.ac.kr)
+
 ## Current Members
 - [Junghwa Kang]()
     - MS student
