@@ -15,6 +15,7 @@ classes: wide
     European Journal of Radiology 134, 109398
     
 1. Fully Automatic Assessment of Background Parenchymal Enhancement on Breast MRI Using Machine‐Learning Models. 
+    ![a](../assets/images/pubs/2021_fgt.png)
     > Nam, Yoonho; Park, Ga Eun; Kang, Junghwa; Kim, Sung Hun;\
      Journal of Magnetic Resonance Imaging 53(3), 818-826\
      [link](https://doi.org/10.1002/jmri.27429)
@@ -32,6 +33,7 @@ classes: wide
     Journal of Clinical Neurology 16(4), 562
 
 1. MRI‐visible dilated perivascular spaces in healthy young adults: A twin heritability study. 
+    ![a](../assets/images/pubs/2020_pvs.png)
     > Choi, Yangsean; Nam, Yoonho; Choi, Yera; Kim, Jiwoong; Jang, Jinhee; Ahn, Kook Jin; Kim, Bum‐soo; Shin, Na‐Young;\
     Human brain mapping 41(18), 5313-5324
 
