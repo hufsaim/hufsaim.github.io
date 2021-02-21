@@ -3,6 +3,9 @@ layout: single
 author_profile: true
 ---
 
+<div class="grid__wrapper">
+</div>
+<br>
 
 ## Notice
 - 석박사과정 및 학부인턴 연구원에 관심이 있는 학생은 yoonhonam@hufs.ac.kr 으로 연락해주세요. If interested in MS/PHD research or undergraduate research intern in our lab, please contact via e-mail (yoonhonam@hufs.ac.kr).
