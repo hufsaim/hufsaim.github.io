@@ -17,9 +17,11 @@ classes: wide
 1. Jang, Jinhee; Nam, Yoonho; Choi, Yangsean; Shin, Na-Young; An, Jae Young; Ahn, Kook-Jin; Kim, Bum-soo; Lee, Kwang-Soo; Kim, Woojun; Paramagnetic Rims in Multiple Sclerosis and Neuromyelitis Optica Spectrum Disorder: A Quantitative Susceptibility Mapping Study with 3-T MRI. Journal of Clinical Neurology
 1. Choi, Yangsean; Nam, Yoonho; Choi, Yera; Kim, Jiwoong; Jang, Jinhee; Ahn, Kook Jin; Kim, Bum‐soo; Shin, Na‐Young; MRI‐visible dilated perivascular spaces in healthy young adults: A twin heritability study. Human brain mapping
 1. Choi, Yangsean; Jang, Jinhee; Kim, Jiwoong; Nam, Yoonho; Shin, Na-Young; Ahn, Kook-Jin; Jeon, Sin-soo; Kim, Bum-soo; MRI and quantitative magnetic susceptibility maps of the brain after serial administration of gadobutrol: a longitudinal follow-up study. Radiology
-1. Park, Jin Joo; Kim, Kyung Ah; Nam, Yoonho; Choi, Moon Hyung; Choi, Sun Young; Rhie, Jeongbae; Convolutional-neural-network-based diagnosis of appendicitis via CT scans in patients with acute abdominal pain presenting in the emergency department. Scientific Reports
+1. Convolutional-neural-network-based diagnosis of appendicitis via CT scans in patients with acute abdominal pain presenting in the emergency department. 
+    > Park, Jin Joo; Kim, Kyung Ah; Nam, Yoonho; Choi, Moon Hyung; Choi, Sun Young; Rhie, Jeongbae; 
+    >> Scientific Reports
 
 
 1. IDH1 mutation prediction using MR-based radiomics in glioblastoma: comparison between manual and fully automated deep learning-based approach of tumor segmentation. 
     > Choi, Yangsean; Nam, Yoonho; Lee, Youn Soo; Kim, Jiwoong; Ahn, Kook-Jin; Jang, Jinhee; Shin, Na-Young; Kim, Bum-Soo; Jeon, Sin-Soo; 
-    - European Journal of Radiology
+    >> European Journal of Radiology
