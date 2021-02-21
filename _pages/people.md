@@ -1,4 +1,9 @@
-### People
+---
+title: People
+permalink: /people/
+classes: wide
+---
+
 - Principle Investigator
     - [Yoonho Nam](https://yoonhonam.github.io/)
         - Assistant professor
