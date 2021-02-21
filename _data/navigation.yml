@@ -13,7 +13,7 @@ main:
   - title: "Research"
     url: /research/
   - title: "Publication"
-    url: /publication/
+    url: /publication/ 
   - title: "News"
     url: /news/
   - title: "Software"
