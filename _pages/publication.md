@@ -9,7 +9,7 @@ classes: wide
 1. Determining the Degree of Dopaminergic Denervation Based on the Loss of Nigral Hyperintensity on SMWI in Parkinsonism.
     > Bae, YJ; Song, YS; Kim, J-M; Choi, BS; Nam, Y; Choi, J-H; Lee, WW; Kim, JH;\
     American Journal of Neuroradiology\
-    ![a](../assets/images/pubs/2021_smwi.png)
+    ![a](../assets/images/pubs/2021_SMWI.png)
 
 
 1. Comparison of susceptibility-weighted imaging and susceptibility map-weighted imaging for the diagnosis of Parkinsonism with nigral hyperintensity. 
