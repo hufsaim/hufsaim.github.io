@@ -13,7 +13,7 @@ classes: wide
 ## Current Members
 - [Junghwa Kang]()
     - MS student
-    - [Kangjung9592 AT gmail.com]()
+    - [kangjung9592@gmail.com](mailto:kangjung9592@gmail.com)
 - [Seungun Jang]()
     - Undergraduate Intern
 - [Hyebin Lee]()
