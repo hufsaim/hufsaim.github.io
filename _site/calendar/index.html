@@ -124,6 +124,12 @@
               >research</a>
             </li><li class="masthead__menu-item">
               <a
+                href="/year-archive/"
+                
+                
+              >news</a>
+            </li><li class="masthead__menu-item">
+              <a
                 href="/teaching/"
                 
                 
@@ -141,6 +147,11 @@
                 
               >wiki</a>
             </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -288,7 +299,9 @@
     
       <h1 id="page-title" class="page__title">HUFSAIM Calendar</h1>
     
-    <iframe src="https://calendar.google.com/calendar/embed?height=960&amp;wkst=1&amp;ctz=Asia%2FSeoul&amp;showPrint=0&amp;mode=MONTH&amp;showTabs=0&amp;title=HUFSAIM%20calendar&amp;showTz=0&amp;hl=en&amp;showTitle=0&amp;src=aHVmc2FpbUBnbWFpbC5jb20&amp;src=a28uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%230078cc&amp;color=%23F4511E" style="border-width:0" width="960" height="960" frameborder="0" scrolling="no"></iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;ctz=Asia%2FSeoul&amp;showPrint=0&amp;mode=WEEK&amp;showTabs=0&amp;showTz=0&amp;showTitle=0&amp;src=aHVmc2FpbUBnbWFpbC5jb20&amp;src=a28uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%230078cc&amp;color=%23F4511E" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+<!--<iframe src="https://calendar.google.com/calendar/embed?height=960&wkst=1&ctz=Asia%2FSeoul&showPrint=0&mode=MONTH&showTabs=0&title=HUFSAIM%20calendar&showTz=0&hl=en&showTitle=0&src=aHVmc2FpbUBnbWFpbC5jb20&src=a28uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230078cc&color=%23F4511E" style="border-width:0" width="960" height="960" frameborder="0" scrolling="no"></iframe>-->
 
 
 
@@ -302,6 +315,17 @@
       
     </div>
 
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
     
 
     <div id="footer" class="page__footer">
@@ -347,6 +371,10 @@
 
 
 
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
 
 
 

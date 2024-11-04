@@ -10,6 +10,8 @@ main:
     url: /pubs/
   - title: "research"
     url: /rsc/
+  - title: "news"
+    url: /year-archive/
   - title: "teaching"
     url: /teaching/
   - title: "calendar"

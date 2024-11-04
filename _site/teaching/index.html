@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>teaching - HUFS AIMLAB</title>
+<!-- begin _includes/seo.html --><title>HUFS AIMLAB</title>
 <meta name="description" content="An amazing LAB.">
 
 
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="HUFS AIMLAB">
-<meta property="og:title" content="teaching">
+<meta property="og:title" content="HUFS AIMLAB">
 <meta property="og:url" content="http://localhost:4000/teaching/">
 
 
@@ -124,6 +124,12 @@
               >research</a>
             </li><li class="masthead__menu-item">
               <a
+                href="/year-archive/"
+                
+                
+              >news</a>
+            </li><li class="masthead__menu-item">
+              <a
                 href="/teaching/"
                 
                 
@@ -141,6 +147,11 @@
                 
               >wiki</a>
             </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -286,9 +297,23 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">teaching</h1>
+      <h1 id="page-title" class="page__title"></h1>
     
-    
+    <h2 id="undergraduate-courses">Undergraduate Courses</h2>
+<ul>
+    <li>T03108701 Linear Algebra</li>
+    <li>T10203101 Engineering Mathematics</li>
+    <li>T10302201 Biomedical Signal Processing</li>
+    <li>T10306201 Biomedical Image Processing</li>
+    <li>T10402201 Biomedical AI</li>
+    <li>T10312101 BME Neuroscience</li>
+</ul>
+
+<h2 id="graduate-courses">Graduate Courses</h2>
+<ul>
+    <li>G67061101 Special Topics in Biomedical AI</li>
+    <li>G67063101 Special Topics in Medical Image Processing</li>
+</ul>
 
 
 
@@ -302,6 +327,17 @@
       
     </div>
 
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
     
 
     <div id="footer" class="page__footer">
@@ -347,6 +383,10 @@
 
 
 
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
 
 
 
