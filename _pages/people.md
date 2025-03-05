@@ -55,11 +55,10 @@ gallery2:
 
 ### M.S. Student
 - Woojin Jung
+- Dayeon Bak
 
 ### Undergraduate Intern
-- Dayeon Bak
-- Wooseung Kim
-- 강대홍, 이인성, 김송희, 이근혜, 이나림, 정혜교
+- 이인성, 김송희, 이근혜, 이나림, 정혜교, 송준영, 신재범
 
 {% include gallery id="gallery" class="full" %}
 
