@@ -37,6 +37,10 @@
 <lastmod>2024-10-21T05:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/ICMRI2024-copy/</loc>
+<lastmod>2024-11-15T05:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/calendar/</loc>
 </url>
 <url>
@@ -68,6 +72,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/page3/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page4/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/assets/images/2023/ICMRI2023_Best%20Traniee%20Oral%20Award_Oh%20Joon%20Kwon.pdf</loc>

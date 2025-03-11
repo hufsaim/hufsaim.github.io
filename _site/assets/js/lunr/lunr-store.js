@@ -52,4 +52,10 @@ var store = [{
         "tags": ["jekyll"],
         "url": "/blog/MICCAI2024/",
         "teaser": null
+      },{
+        "title": "박다연학생 ICMRI2024 우수구연발표상 수상",
+        "excerpt":"2024년 11월 8일-9일 그랜드워커힐에서 진행된 자기공명영상관련 국제학회 ICMRI2024에서 박다연 학생이 수행한 연구에 대한 구연발표로 우수구연발표상 (Best Trainee Scientific Awards - Gold)을 수상하였습니다.        ","categories": ["blog"],
+        "tags": ["jekyll"],
+        "url": "/blog/ICMRI2024-copy/",
+        "teaser": null
       }]
