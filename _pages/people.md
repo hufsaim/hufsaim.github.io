@@ -7,12 +7,12 @@ author_profile: true
 
 gallery:  
 
-  - url: /assets/images/members/IMG_4464.jpeg
-    image_path: /assets/images/members/IMG_4464.jpeg
+  - url: /assets/images/members/IMG_6226.jpg
+    image_path: /assets/images/members/IMG_6226.jpg
     alt: "placeholder image 1"
     title: "Image 1 title caption"
-  - url: /assets/images/hufsaim_bdy.jpeg
-    image_path: /assets/images/hufsaim_bdy.jpeg
+  - url: /assets/images/members/IMG_4464.jpeg
+    image_path: /assets/images/members/IMG_4464.jpeg
     alt: "placeholder image 1"
     title: "Image 1 title caption"
   - url: /assets/images/members/IMG_5115.jpeg

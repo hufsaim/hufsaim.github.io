@@ -56,6 +56,12 @@ var store = [{
         "title": "박다연학생 ICMRI2024 우수구연발표상 수상",
         "excerpt":"2024년 11월 8일-9일 그랜드워커힐에서 진행된 자기공명영상관련 국제학회 ICMRI2024에서 박다연 학생이 수행한 연구에 대한 구연발표로 우수구연발표상 (Best Trainee Scientific Awards - Gold)을 수상하였습니다.        ","categories": ["blog"],
         "tags": ["jekyll"],
-        "url": "/blog/ICMRI2024-copy/",
+        "url": "/blog/ICMRI2024/",
+        "teaser": null
+      },{
+        "title": "강정화, 정우진 ISMRM2025 Magna Cum Laude 수상",
+        "excerpt":"2025년 5월 8일-15일 미국 하와이에서 진행된 자기공명영상관련 최대국제학회 ISMRM2025에서 강정화 학생과 정우진 학생이 구연발표를 진행하여 두 학생 모두 Magna Cum Laude를 수상하였습니다. ISMRM Magna Cum Laude는 상위 15%이내의 우수 연구초록에 수여되는 상입니다.           ","categories": ["blog"],
+        "tags": ["jekyll"],
+        "url": "/blog/ISMRM2025/",
         "teaser": null
       }]
