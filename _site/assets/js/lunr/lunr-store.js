@@ -60,7 +60,7 @@ var store = [{
         "teaser": null
       },{
         "title": "강정화, 정우진 ISMRM2025 Magna Cum Laude 수상",
-        "excerpt":"2025년 5월 8일-15일 미국 하와이에서 진행된 자기공명영상관련 최대국제학회 ISMRM2025에서 강정화 학생과 정우진 학생이 구연발표를 진행하여 두 학생 모두 Magna Cum Laude를 수상하였습니다. ISMRM Magna Cum Laude는 상위 15%이내의 우수 연구초록에 수여되는 상입니다.           ","categories": ["blog"],
+        "excerpt":"2025년 5월 8일-15일 미국 하와이에서 진행된 자기공명영상관련 최대국제학회 ISMRM2025에서 강정화 학생과 정우진 학생이 구연발표를 진행하여 두 학생 모두 Magna Cum Laude를 수상하였습니다. ISMRM Magna Cum Laude는 상위 15%이내의 우수 연구초록에 수여되는 상입니다.                 ","categories": ["blog"],
         "tags": ["jekyll"],
         "url": "/blog/ISMRM2025/",
         "teaser": null
