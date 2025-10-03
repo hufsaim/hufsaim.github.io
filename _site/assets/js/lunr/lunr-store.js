@@ -59,9 +59,15 @@ var store = [{
         "url": "/blog/ICMRI2024/",
         "teaser": null
       },{
-        "title": "강정화, 정우진 ISMRM2025 Magna Cum Laude 수상",
-        "excerpt":"2025년 5월 8일-15일 미국 하와이에서 진행된 자기공명영상관련 최대국제학회 ISMRM2025에서 강정화 학생과 정우진 학생이 구연발표를 진행하여 두 학생 모두 Magna Cum Laude를 수상하였습니다. ISMRM Magna Cum Laude는 상위 15%이내의 우수 연구초록에 수여되는 상입니다.                 ","categories": ["blog"],
+        "title": "강정화학생, 정우진학생 ISMRM2025 Magna Cum Laude 수상",
+        "excerpt":"2025년 5월 8일-15일 미국 하와이에서 진행된 자기공명영상관련 최대국제학회 ISMRM2025에서 강정화 학생과 정우진 학생이 구연발표를 진행하여 두 학생 모두 Magna Cum Laude를 수상하였습니다. ISMRM Magna Cum Laude는 상위 15%이내의 우수 연구초록에 수여되는 상입니다.                  ","categories": ["blog"],
         "tags": ["jekyll"],
         "url": "/blog/ISMRM2025/",
+        "teaser": null
+      },{
+        "title": "정우진학생 MICCAI2025 발표",
+        "excerpt":"2025년 9월 23일-17일 대한민국 대전에서 진행된 의료영상처리와 관련된 최대국제학회 MICCAI2025에서 정우진 학생의 연구초록이 채택되어 포스터발표를 진행하였습니다(선정율: 28%).            ","categories": ["blog"],
+        "tags": ["jekyll"],
+        "url": "/blog/MICCAI2025/",
         "teaser": null
       }]
