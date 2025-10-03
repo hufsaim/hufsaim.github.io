@@ -66,7 +66,7 @@ var store = [{
         "teaser": null
       },{
         "title": "정우진학생 MICCAI2025 발표",
-        "excerpt":"2025년 9월 23일-17일 대한민국 대전에서 진행된 의료영상처리와 관련된 최대국제학회 MICCAI2025에서 정우진 학생의 연구초록이 채택되어 포스터발표를 진행하였습니다(선정율: 28%).            ","categories": ["blog"],
+        "excerpt":"2025년 9월 23일-27일 대한민국 대전에서 진행된 의료영상처리와 관련된 최대국제학회 MICCAI2025에서 정우진 학생의 연구초록이 채택되어 포스터발표를 진행하였습니다(선정율: 28%).           ","categories": ["blog"],
         "tags": ["jekyll"],
         "url": "/blog/MICCAI2025/",
         "teaser": null
