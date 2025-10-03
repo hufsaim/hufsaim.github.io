@@ -6,7 +6,10 @@ author_profile: true
 
 
 gallery:  
-
+  - url: /assets/images/members/IMG_7274.jpeg
+    image_path: /assets/images/members/IMG_7274.jpeg
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
   - url: /assets/images/members/IMG_6226.jpg
     image_path: /assets/images/members/IMG_6226.jpg
     alt: "placeholder image 1"
@@ -19,7 +22,14 @@ gallery:
     image_path: /assets/images/members/IMG_5115.jpeg
     alt: "placeholder image 1"
     title: "Image 1 title caption"
-
+  - url: /assets/images/members/IMG_6224.jpeg
+    image_path: /assets/images/members/IMG_6224.jpeg
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /assets/images/members/IMG_6909.JPG
+    image_path: /assets/images/members/IMG_6909.JPG
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
 gallery2:  
   - url: /assets/images/members/2019_Interns.jpeg
     image_path: /assets/images/members/2019_Interns.jpeg
@@ -62,7 +72,7 @@ gallery2:
 - Dayeon Bak
 
 ### Undergraduate Intern
-- 이인성, 김송희, 이근혜, 이나림, 정혜교, 송준영, 신재범
+- 송준영, 신재범, 신채윤, 이나림, 정혜교
 
 {% include gallery id="gallery" class="full" %}
 
@@ -74,7 +84,7 @@ gallery2:
     <li>2021: 유영범 (BME16), 김규아 (BME19), 류진하 (BME19), 유내정 (BME19), 김영주 (BME19), 이수민 (BME19), 김수민 (BME19)</li>
     <li>2022: 김하람 (BME17), 배강현 (BME18), 지종민 (BME18), 김수연 (BME19), 정은선 (BME19), 박민정 (BME20), 박찬희 (BME20)</li>
     <li>2023: 권오준 (BME19), 이승주 (BME19), 최대현 (BME19), 박지현 (BME20), 조현서 (BME20), 유하경 (BME20), 권은아 (화공19)</li>
-    <li>2024: 김우승 (BME18), 유창민 (BME19), 강대홍 (BME20)</li>
+    <li>2024: 김우승 (BME18), 유창민 (BME19), 강대홍 (BME20), 이인성 (BME20), 김송희 (BME22), 이근혜 (BME21) </li>
     {% include gallery id="gallery2" class="full" %}
   </ul>
 
