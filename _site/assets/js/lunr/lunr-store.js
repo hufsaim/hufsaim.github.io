@@ -70,4 +70,16 @@ var store = [{
         "tags": ["jekyll"],
         "url": "/blog/MICCAI2025/",
         "teaser": null
+      },{
+        "title": "이나림학생 ICMRI2025 우수구연발표상 수상",
+        "excerpt":"2025년 10월 31일-11월 1일 그랜드워커힐에서 진행된 자기공명영상관련 국제학회 ICMRI2025에서 이나림 학생이 수행한 연구에 대한 구연발표로 우수구연발표상 (Best Trainee Scientific Awards - Silver)을 수상하였습니다.       이나림 학생은 QSM기법을 기반으로 자동화된 choroid plexus의 calcification의 정량분석기법을 제안한 연구를 발표해 주었습니다.    강정화 학생은 MRI에서 보여지는 perivascular space의 정량기법에 대한 강의(invited lecture)를 진행해 주었습니다.      ","categories": ["blog"],
+        "tags": ["jekyll"],
+        "url": "/blog/ICMRI2025/",
+        "teaser": null
+      },{
+        "title": "강정화학생 ISMRM2026 Summa Cum Laude 수상",
+        "excerpt":"2026년 5월 9일-14일 남아프리카공화국 케이프타운에서 진행된 자기공명영상관련 최대국제학회 ISMRM2026에서 강정화 학생이 구연발표를 진행하여 두 학생 모두 Summa Cum Laude를 수상하였습니다. ISMRM Summa Cum Laude는 상위 5%이내의 우수 연구초록에 수여되는 상입니다. 강정화학생(박사과정)과 박다연학생(석사과정)이 남아프리카공화국 케이프타운에서 열린 ISMRM2026에 참석하였습니다. 강정화학생은 영유아의 뇌영상으로부터 나이정보와 같은 메타정보를 효과적으로 활용하여 맥락총을 자동분할하는 딥러닝모델을 제안한 연구에...","categories": ["blog"],
+        "tags": ["jekyll"],
+        "url": "/blog/ISMRM2026/",
+        "teaser": null
       }]

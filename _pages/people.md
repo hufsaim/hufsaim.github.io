@@ -72,7 +72,7 @@ gallery2:
 - Dayeon Bak
 
 ### Undergraduate Intern
-- 송준영, 신재범, 신채윤, 이나림, 정혜교
+- 송준영, 신재범, 신채윤, 이지후, 김우진, 한지현, 박민선, 김예은
 
 {% include gallery id="gallery" class="full" %}
 
@@ -85,6 +85,7 @@ gallery2:
     <li>2022: 김하람 (BME17), 배강현 (BME18), 지종민 (BME18), 김수연 (BME19), 정은선 (BME19), 박민정 (BME20), 박찬희 (BME20)</li>
     <li>2023: 권오준 (BME19), 이승주 (BME19), 최대현 (BME19), 박지현 (BME20), 조현서 (BME20), 유하경 (BME20), 권은아 (화공19)</li>
     <li>2024: 김우승 (BME18), 유창민 (BME19), 강대홍 (BME20), 이인성 (BME20), 김송희 (BME22), 이근혜 (BME21) </li>
+    <li>2025: 이나림 (BME22), 정혜교 (수학22) </li>
     {% include gallery id="gallery2" class="full" %}
   </ul>
 
