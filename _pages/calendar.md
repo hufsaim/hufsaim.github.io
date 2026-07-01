@@ -3,6 +3,7 @@ title: "HUFSAIM Calendar"
 layout: category
 permalink: /calendar/
 author_profile: true
+classes: wide
 ---
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Asia%2FSeoul&showPrint=0&mode=WEEK&showTabs=0&showTz=0&showTitle=0&src=aHVmc2FpbUBnbWFpbC5jb20&src=a28uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230078cc&color=%23F4511E" style="border-width:0" width="800" height="800" frameborder="0" scrolling="no"></iframe>
 

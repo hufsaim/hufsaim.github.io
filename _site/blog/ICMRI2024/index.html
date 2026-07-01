@@ -31,6 +31,8 @@
 
 
 
+  <meta property="og:image" content="http://localhost:4000/assets/images/2024/icmri2024-bdy.jpeg">
+
 
 
 
@@ -81,6 +83,414 @@
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- Publication card styles -->
+<style>
+  .pub-card {
+    display: flex;
+    gap: 1.5em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #eaecee;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .pub-card__image {
+    flex: 0 0 200px;
+    max-width: 200px;
+  }
+  .pub-card__image img {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #eaecee;
+    display: block;
+  }
+  .pub-card__body {
+    flex: 1;
+    min-width: 200px;
+  }
+  .pub-card__title {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 0 0.4em;
+    line-height: 1.4;
+  }
+  .pub-card__authors {
+    font-size: 0.82em;
+    margin: 0 0 0.3em;
+    color: #3d4144;
+  }
+  .pub-card__authors strong {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .pub-card__venue {
+    font-size: 0.82em;
+    color: #3b9cba;
+    font-style: italic;
+    margin: 0 0 0.6em;
+  }
+  .pub-card__abstract {
+    font-size: 0.8em;
+    color: #6f777d;
+    margin: 0 0 0.8em;
+    line-height: 1.6;
+  }
+  .pub-card__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+  }
+  .pub-card__links .btn {
+    font-size: 0.7em;
+    padding: 0.3em 0.8em;
+    margin-bottom: 0;
+  }
+  .pub-year-section {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #3b9cba;
+    font-size: 1.1em;
+    color: #3d4144;
+  }
+
+  /* Research grid — DeepMind-inspired card layout */
+  .rsc-intro {
+    font-size: 0.9em;
+    color: #6f777d;
+    line-height: 1.75;
+    max-width: 680px;
+    margin-bottom: 2em;
+    border-left: 3px solid #3b9cba;
+    padding-left: 1em;
+  }
+
+  .rsc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.4em;
+    margin-top: 0.5em;
+  }
+
+  .rsc-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e4e8ec;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rsc-card__image {
+    width: 100%;
+    height: 185px;
+    background: #f2f5f7;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rsc-card__image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    padding: 0.75em;
+  }
+
+  .rsc-card__body {
+    padding: 1.1em 1.25em 1.3em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .rsc-card__category {
+    font-size: 0.62em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3b9cba;
+    margin-bottom: 0.5em;
+  }
+  .rsc-card__title {
+    font-size: 0.92em;
+    font-weight: 700;
+    line-height: 1.45;
+    margin: 0 0 0.55em;
+    color: #1c2330;
+  }
+  .rsc-card__desc {
+    font-size: 0.78em;
+    color: #6f777d;
+    line-height: 1.7;
+    margin: 0 0 1em;
+    flex: 1;
+  }
+
+  .rsc-card__pubs {
+    margin-top: auto;
+    padding-top: 0.75em;
+    border-top: 1px solid #e8ecef;
+  }
+  .rsc-card__pubs-label {
+    font-size: 0.6em;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #b0b8bf;
+    margin: 0 0 0.35em;
+  }
+  .rsc-card__pub-link {
+    display: block;
+    font-size: 0.73em;
+    color: #3b9cba;
+    text-decoration: none;
+    line-height: 1.45;
+    margin-bottom: 0.25em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .rsc-card__pub-link:hover {
+    color: #1c2330;
+    text-decoration: underline;
+  }
+
+  /* Main page slideshow */
+  .slideshow {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1.8em;
+    background: #111;
+  }
+  .slideshow__slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+  }
+  .slideshow__slide.active {
+    opacity: 1;
+  }
+  .slideshow__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+  }
+  .slideshow__btn:hover { background: rgba(0,0,0,0.6); }
+  .slideshow__btn--prev { left: 0.7em; }
+  .slideshow__btn--next { right: 0.7em; }
+  .slideshow__dots {
+    position: absolute;
+    bottom: 0.7em;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.45em;
+    z-index: 10;
+  }
+  .slideshow__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.45);
+    cursor: pointer;
+    transition: background 0.2s;
+    border: none;
+    padding: 0;
+  }
+  .slideshow__dot.active { background: #fff; }
+
+  /* News list thumbnail */
+  .archive__item--list-thumb {
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+  }
+  .archive__item-thumb {
+    flex: 0 0 90px;
+  }
+  .archive__item-thumb img {
+    width: 90px;
+    height: 68px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+  }
+  .archive__item-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* People card styles */
+  .people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    gap: 1.1em;
+    margin-bottom: 1.8em;
+  }
+
+  .people-card {
+    background: #fff;
+    border: 1px solid #e4e8ec;
+    border-radius: 10px;
+    padding: 1.3em 0.8em 1.1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .people-card__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 0.8em;
+    flex-shrink: 0;
+    background: #daeef6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .people-card__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .people-card__initial {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #3b9cba;
+    line-height: 1;
+  }
+
+  .people-card__name {
+    font-size: 0.88em;
+    font-weight: 700;
+    color: #1c2330;
+    margin: 0 0 0.15em;
+    line-height: 1.3;
+  }
+
+  .people-card__name-ko {
+    font-size: 0.76em;
+    color: #6f777d;
+    margin: 0 0 0.3em;
+  }
+
+  .people-card__role {
+    font-size: 0.68em;
+    color: #3b9cba;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin: 0 0 0.7em;
+  }
+
+  .people-card__links {
+    display: flex;
+    gap: 0.7em;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  .people-card__links a {
+    color: #aab0b5;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .people-card__links a:hover {
+    color: #3b9cba;
+    text-decoration: none;
+  }
+
+  /* Teaching card styles */
+  .tch-section {
+    margin-top: 1.8em;
+    margin-bottom: 1em;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #3b9cba;
+    font-size: 1em;
+    font-weight: 700;
+    color: #1c2330;
+    letter-spacing: 0.02em;
+  }
+
+  .tch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.1em;
+    margin-bottom: 1em;
+  }
+
+  .tch-card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e4e8ec;
+    padding: 1.2em 1.3em 1.1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tch-card__code {
+    font-size: 0.62em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #3b9cba;
+    margin-bottom: 0.5em;
+  }
+
+  .tch-card__title {
+    font-size: 0.92em;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #1c2330;
+    margin: 0 0 0.55em;
+    flex: 1;
+  }
+
+  .tch-card__desc {
+    font-size: 0.76em;
+    color: #6f777d;
+    line-height: 1.65;
+    margin: 0 0 0.9em;
+  }
+
+  .tch-card__link {
+    margin-top: auto;
+  }
+
+  .tch-card__link .btn {
+    font-size: 0.68em;
+    padding: 0.3em 0.85em;
+    margin-bottom: 0;
+  }
+</style>
 
 <!-- end custom head snippets -->
 
@@ -369,18 +779,24 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/ISMRM2026/" rel="permalink">강정화학생 ISMRM2026 Summa Cum Laude 수상
+      <div class="archive__item-thumb">
+        <img src="/assets/images/2026/ISMRM2026_01.jpeg" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/ISMRM2026/" rel="permalink">강정화학생 ISMRM2026 Summa Cum Laude 수상
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">2026년 5월 9일-14일 남아프리카공화국 케이프타운에서 진행된 자기공명영상관련 최대국제학회 ISMRM2026에서 강정화 학생이 구연발표를 진행하여 두 학생 모두 Summa Cum Laude를 수상하였습니다. ISMRM Summa Cum Laude는 상위 5%이내의 우수 연구초록...</p>
+      <p class="archive__item-excerpt" itemprop="description">2026년 5월 9일-14일 남아프리카공화국 케이프타운에서 진행된 자기공명영상관련 최대국제학회 ISMRM2026에서 강정화 학생이 구연발표를 진행하여 Summa Cum Laude를 수상하였습니다. ISMRM Summa Cum Laude는 상위 5%이내의 우수 연구초록에 수여되는 상...</p>
+    </div>
   </article>
 </div>
 
@@ -398,19 +814,25 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/ICMRI2025/" rel="permalink">이나림학생 ICMRI2025 우수구연발표상 수상
+      <div class="archive__item-thumb">
+        <img src="/assets/images/2025/ICMRI2025_04.jpeg" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/ICMRI2025/" rel="permalink">이나림학생 ICMRI2025 우수구연발표상 수상
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">2025년 10월 31일-11월 1일 그랜드워커힐에서 진행된 자기공명영상관련 국제학회 ICMRI2025에서 이나림 학생이 수행한 연구에 대한 구연발표로 우수구연발표상 (Best Trainee Scientific Awards - Silver)을 수상하였습니다.
+      <p class="archive__item-excerpt" itemprop="description">2025년 10월 31일-11월 1일 그랜드워커힐에서 진행된 자기공명영상관련 국제학회 ICMRI2025에서 이나림 학생이 수행한 연구에 대한 구연발표로 우수구연발표상 (Best Trainee Scientific Awards - Silver)을 수상하였습니다.
 </p>
+    </div>
   </article>
 </div>
 
@@ -420,19 +842,25 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/MICCAI2025/" rel="permalink">정우진학생 MICCAI2025 발표
+      <div class="archive__item-thumb">
+        <img src="/assets/images/2025/2025-09-24-A.jpg" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/MICCAI2025/" rel="permalink">정우진학생 MICCAI2025 발표
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">2025년 9월 23일-27일 대한민국 대전에서 진행된 의료영상처리와 관련된 최대국제학회 MICCAI2025에서 정우진 학생의 연구초록이 채택되어 포스터발표를 진행하였습니다(선정율: 28%).
+      <p class="archive__item-excerpt" itemprop="description">2025년 9월 23일-27일 대한민국 대전에서 진행된 의료영상처리와 관련된 최대국제학회 MICCAI2025에서 정우진 학생의 연구초록이 채택되어 포스터발표를 진행하였습니다(선정율: 28%).
 </p>
+    </div>
   </article>
 </div>
 
@@ -442,18 +870,24 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/ISMRM2025/" rel="permalink">강정화학생, 정우진학생 ISMRM2025 Magna Cum Laude 수상
+      <div class="archive__item-thumb">
+        <img src="/assets/images/award/ISMRM2025_Magna_Kang.png" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/ISMRM2025/" rel="permalink">강정화학생, 정우진학생 ISMRM2025 Magna Cum Laude 수상
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">2025년 5월 8일-15일 미국 하와이에서 진행된 자기공명영상관련 최대국제학회 ISMRM2025에서 강정화 학생과 정우진 학생이 구연발표를 진행하여 두 학생 모두 Magna Cum Laude를 수상하였습니다. ISMRM Magna Cum Laude는 상위 15%이내의 우수 연구초...</p>
+      <p class="archive__item-excerpt" itemprop="description">2025년 5월 8일-15일 미국 하와이에서 진행된 자기공명영상관련 최대국제학회 ISMRM2025에서 강정화 학생과 정우진 학생이 구연발표를 진행하여 두 학생 모두 Magna Cum Laude를 수상하였습니다. ISMRM Magna Cum Laude는 상위 15%이내의 우수 연구초...</p>
+    </div>
   </article>
 </div>
 
@@ -471,19 +905,25 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/ICMRI2024/" rel="permalink">박다연학생 ICMRI2024 우수구연발표상 수상
+      <div class="archive__item-thumb">
+        <img src="/assets/images/2024/icmri2024-bdy.jpeg" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/ICMRI2024/" rel="permalink">박다연학생 ICMRI2024 우수구연발표상 수상
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">2024년 11월 8일-9일 그랜드워커힐에서 진행된 자기공명영상관련 국제학회 ICMRI2024에서 박다연 학생이 수행한 연구에 대한 구연발표로 우수구연발표상 (Best Trainee Scientific Awards - Gold)을 수상하였습니다.
+      <p class="archive__item-excerpt" itemprop="description">2024년 11월 8일-9일 그랜드워커힐에서 진행된 자기공명영상관련 국제학회 ICMRI2024에서 박다연 학생이 수행한 연구에 대한 구연발표로 우수구연발표상 (Best Trainee Scientific Awards - Gold)을 수상하였습니다.
 </p>
+    </div>
   </article>
 </div>
 
@@ -493,19 +933,25 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/MICCAI2024/" rel="permalink">MICCAI2024 EPVS segmentation challenge 3등
+      <div class="archive__item-thumb">
+        <img src="/assets/images/2024/miccai2024c.jpg" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/MICCAI2024/" rel="permalink">MICCAI2024 EPVS segmentation challenge 3등
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">2024년 10월 6일-10일 모로코 마라케시에서 진행된 MICCAI2024에서 진행된 EPVS challenge에 강정화, 김우승, 박다연 학생이 팀으로 참가하여 10팀 이상의 최종 라운드 진출 팀 중 3위로 수상(상금 100달러)을 하였습니다.
+      <p class="archive__item-excerpt" itemprop="description">2024년 10월 6일-10일 모로코 마라케시에서 진행된 MICCAI2024에서 진행된 EPVS challenge에 강정화, 김우승, 박다연 학생이 팀으로 참가하여 10팀 이상의 최종 라운드 진출 팀 중 3위로 수상(상금 100달러)을 하였습니다.
 </p>
+    </div>
   </article>
 </div>
 
@@ -515,18 +961,24 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/ISMRM2024/" rel="permalink">강정화학생 ISMRM2024 Neurofluid SG Trainee Award 수상
+      <div class="archive__item-thumb">
+        <img src="/assets/images/2024/IMG_2869.jpg" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/ISMRM2024/" rel="permalink">강정화학생 ISMRM2024 Neurofluid SG Trainee Award 수상
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">2024년 5월 4일-9일 싱가포르에서 진행된 자기공명영상관련 최대국제학회 ISMRM2024에서 진행된 Imaging Neurofluids Study Group에서 Perivascular space segmentation 관련 진행하고 있는 연구내용을 발표하여 Trainee Awa...</p>
+      <p class="archive__item-excerpt" itemprop="description">2024년 5월 4일-9일 싱가포르에서 진행된 자기공명영상관련 최대국제학회 ISMRM2024에서 진행된 Imaging Neurofluids Study Group에서 Perivascular space segmentation 관련 진행하고 있는 연구내용을 발표하여 Trainee Awa...</p>
+    </div>
   </article>
 </div>
 
@@ -544,19 +996,25 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/ICMRI2023/" rel="permalink">권오준학생 ICMRI2023 우수구연발표상 수상
+      <div class="archive__item-thumb">
+        <img src="/assets/images/2023/ICMRI2023b.jpeg" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/ICMRI2023/" rel="permalink">권오준학생 ICMRI2023 우수구연발표상 수상
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">2023년 11월 3일-4일 그랜드워커힐에서 진행된 자기공명영상관련 국제학회 ICMRI2023에서 권오준(학부19학번) 학생이 학부인턴연구원으로 수행한 연구를 발표하여 우수구연발표상 (Best Trainee Scientific Awards - 2nd place)을 수상하였습니다.
+      <p class="archive__item-excerpt" itemprop="description">2023년 11월 3일-4일 그랜드워커힐에서 진행된 자기공명영상관련 국제학회 ICMRI2023에서 권오준(학부19학번) 학생이 학부인턴연구원으로 수행한 연구를 발표하여 우수구연발표상 (Best Trainee Scientific Awards - 2nd place)을 수상하였습니다.
 </p>
+    </div>
   </article>
 </div>
 
@@ -574,19 +1032,25 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/KTL/" rel="permalink">제2회 AI영상 진단개발 해커톤 원장상 수상
+      <div class="archive__item-thumb">
+        <img src="/assets/img/2022/ktl2022a.png" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/KTL/" rel="permalink">제2회 AI영상 진단개발 해커톤 원장상 수상
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">2022년 진행된 산업통산자원부와 한국산업기술시험원이 개최한 제2회 의료빅데이터활용 AI영상 진단개발 해커톤에 박찬희(학부20학번), 지종민(학부18학번), 배강현(학부 18학번), 권은아(학부19학번) 학생이 팀으로 참여하여 원장상을 수상하였습니다.
+      <p class="archive__item-excerpt" itemprop="description">2022년 진행된 산업통산자원부와 한국산업기술시험원이 개최한 제2회 의료빅데이터활용 AI영상 진단개발 해커톤에 박찬희(학부20학번), 지종민(학부18학번), 배강현(학부 18학번), 권은아(학부19학번) 학생이 팀으로 참여하여 원장상을 수상하였습니다.
 </p>
+    </div>
   </article>
 </div>
 
@@ -598,17 +1062,19 @@
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/ISMRM2022/" rel="permalink">강정화학생 ISMRM2022 구연발표선정
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/ISMRM2022/" rel="permalink">강정화학생 ISMRM2022 구연발표선정
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">강정화학생이 제출한 초록이 ISMRM2022 구연발표 선정! :tada: :tada:
+      <p class="archive__item-excerpt" itemprop="description">강정화학생이 제출한 초록이 ISMRM2022 구연발표 선정! :tada: :tada:
 </p>
+    </div>
   </article>
 </div>
 
@@ -626,19 +1092,25 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/KCR2021/" rel="permalink">김수민학생 ICMRI2021 우수구연발표상 수상
+      <div class="archive__item-thumb">
+        <img src="/assets/img/2021/icmri2021_sumin.jpeg" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/KCR2021/" rel="permalink">김수민학생 ICMRI2021 우수구연발표상 수상
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">2021년 11월 5일-6일 그랜드워커힐에서 진행된 자기공명영상관련 국제학회 ICMRI2021에서 김수민(학부19학번) 학생이 학부인턴연구원으로 수행한 연구를 발표하여 우수구연발표상 (Best Trainee Scientific Awards - 2nd place)을 수상하였습니다.
+      <p class="archive__item-excerpt" itemprop="description">2021년 11월 5일-6일 그랜드워커힐에서 진행된 자기공명영상관련 국제학회 ICMRI2021에서 김수민(학부19학번) 학생이 학부인턴연구원으로 수행한 연구를 발표하여 우수구연발표상 (Best Trainee Scientific Awards - 2nd place)을 수상하였습니다.
 </p>
+    </div>
   </article>
 </div>
 
@@ -648,18 +1120,24 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/PAIP2021/" rel="permalink">PAIP2021 challenge 3등
+      <div class="archive__item-thumb">
+        <img src="/assets/img/2021/IMG_1210.jpeg" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/PAIP2021/" rel="permalink">MICCAI2021 PAIP2021 challenge 3등
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">2021년 4월부터 7월까지 진행된 MICCAI2021의 endorsed event로 진행된 국제 의료AI경진대회 PAIP 2021 Challenge: Perineural Invasion in Multiple Organ Cancer에서 한국외국어대학교 바이오메디컬공학부 유환승(학부...</p>
+      <p class="archive__item-excerpt" itemprop="description">2021년 4월부터 7월까지 진행된 MICCAI2021의 endorsed event로 진행된 국제 의료AI경진대회 PAIP 2021 Challenge: Perineural Invasion in Multiple Organ Cancer에서 한국외국어대학교 바이오메디컬공학부 유환승(학부...</p>
+    </div>
   </article>
 </div>
 
@@ -677,18 +1155,24 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/BM/" rel="permalink">Body morphometry AI segmentation 챌린지 1등
+      <div class="archive__item-thumb">
+        <img src="/assets/img/2020/IMG_0647.JPG" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/BM/" rel="permalink">Body morphometry AI segmentation 챌린지 1등
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">2020년 10월에 진행된 Body morphometry AI segmentation 온라인 의료인공지능 챌린지에서 대학원생 강정화(20학번), 학부생 장승운(16학번), 이혜빈(16학번), 유환승(16학번), 백다영(18학번) 학생이 AIMLAB팀으로 참가하여 전체 9팀 중에 1...</p>
+      <p class="archive__item-excerpt" itemprop="description">2020년 10월에 진행된 Body morphometry AI segmentation 온라인 의료인공지능 챌린지에서 대학원생 강정화(20학번), 학부생 장승운(16학번), 이혜빈(16학번), 유환승(16학번), 백다영(18학번) 학생이 AIMLAB팀으로 참가하여 전체 9팀 중에 1...</p>
+    </div>
   </article>
 </div>
 
@@ -698,18 +1182,24 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="archive__item archive__item--list-thumb" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/Help/" rel="permalink">AI HeLP Challenge 정량평가 1등
+      <div class="archive__item-thumb">
+        <img src="/assets/img/2020/help2019.png" alt="">
+      </div>
+    
+    <div class="archive__item-text">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          <a href="/blog/Help/" rel="permalink">AI HeLP Challenge 정량평가 1등
 </a>
+        
+      </h2>
       
-    </h2>
-    
 
 
-    <p class="archive__item-excerpt" itemprop="description">보건복지부와 서울아산병원에서 주관한 2019 의료인공지능 개발 콘테스트 AI HeLP Challenge에서 Traumatic lesion classification and detection 주제에서 연구실 학생들(강정화, 장승운, 김현하, 김은진, 이슬)이 주축이 되어 출전하여 정...</p>
+      <p class="archive__item-excerpt" itemprop="description">보건복지부와 서울아산병원에서 주관한 2019 의료인공지능 개발 콘테스트 AI HeLP Challenge에서 Traumatic lesion classification and detection 주제에서 연구실 학생들(강정화, 장승운, 김현하, 김은진, 이슬)이 주축이 되어 출전하여 정...</p>
+    </div>
   </article>
 </div>
 
