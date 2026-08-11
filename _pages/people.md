@@ -140,6 +140,7 @@ classes: wide
     <button class="slideshow__dot"></button>
     <button class="slideshow__dot"></button>
     <button class="slideshow__dot"></button>
+    <button class="slideshow__dot"></button>
   </div>
 </div>
 
