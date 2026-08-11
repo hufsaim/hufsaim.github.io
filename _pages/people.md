@@ -29,7 +29,8 @@ classes: wide
     <p class="people-card__name-ko">강정화</p>
     <p class="people-card__role">Ph.D. Student</p>
     <div class="people-card__links">
-      <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://sites.google.com/view/junghwa-kang/home" title="Homepage"><i class="fas fa-globe"></i></a>
+      <a href="mailto:kangjung9592@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
 
@@ -40,70 +41,87 @@ classes: wide
     <p class="people-card__name">Dayeon Bak</p>
     <p class="people-card__name-ko">박다연</p>
     <p class="people-card__role">M.S. Student</p>
+    <div class="people-card__links">
+      <a href="mailto:dayeon.bak@hufs.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   </div>
 
   <div class="people-card">
-    <div class="people-card__avatar"><span class="people-card__initial">이</span></div>
-    <p class="people-card__name">이지후</p>
+    <div class="people-card__avatar"><span class="people-card__initial">JH</span></div>
+    <p class="people-card__name">Jihoo Lee</p>
+    <p class="people-card__name-ko">이지후</p>
     <p class="people-card__role">Undergraduate Intern</p>
+    <div class="people-card__links">
+      <a href="mailto:leejihoo23@hufs.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   </div>
 
   <div class="people-card">
-    <div class="people-card__avatar"><span class="people-card__initial">신</span></div>
-    <p class="people-card__name">신채윤</p>
+    <div class="people-card__avatar"><span class="people-card__initial">CY</span></div>
+    <p class="people-card__name">Chaeyoun Shin</p>
+    <p class="people-card__name-ko">신채윤</p>
     <p class="people-card__role">Undergraduate Intern</p>
+    <div class="people-card__links">
+      <a href="mailto:chaemum@hufs.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   </div>
 
   <div class="people-card">
-    <div class="people-card__avatar"><span class="people-card__initial">신</span></div>
-    <p class="people-card__name">신재범</p>
+    <div class="people-card__avatar"><span class="people-card__initial">JB</span></div>
+    <p class="people-card__name">Jaebeom Shin</p>
+    <p class="people-card__name-ko">신재범</p>
     <p class="people-card__role">Undergraduate Intern</p>
+    <div class="people-card__links">
+      <a href="mailto:202101915@hufs.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   </div>
 
   <div class="people-card">
-    <div class="people-card__avatar"><span class="people-card__initial">박</span></div>
-    <p class="people-card__name">박선민</p>
+    <div class="people-card__avatar"><span class="people-card__initial">SM</span></div>
+    <p class="people-card__name">Sunmin Park</p>
+    <p class="people-card__name-ko">박선민</p>
     <p class="people-card__role">Undergraduate Intern</p>
+    <div class="people-card__links">
+      <a href="mailto:oniumin@hufs.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   </div>
 
   <div class="people-card">
-    <div class="people-card__avatar"><span class="people-card__initial">김</span></div>
-    <p class="people-card__name">김예은</p>
+    <div class="people-card__avatar"><span class="people-card__initial">YE</span></div>
+    <p class="people-card__name">Yeeun Kim</p>
+    <p class="people-card__name-ko">김예은</p>
+    <p class="people-card__role">Undergraduate Intern</p>
+    <div class="people-card__links">
+      <a href="mailto:yeeunkim010@hufs.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>  
+
+  <div class="people-card">
+    <div class="people-card__avatar"><span class="people-card__initial">JM</span></div>
+    <p class="people-card__name">Jeongmi Ma</p>
+    <p class="people-card__name-ko">마정미</p>
     <p class="people-card__role">Undergraduate Intern</p>
   </div>  
 
   <div class="people-card">
-    <div class="people-card__avatar"><span class="people-card__initial">김</span></div>
-    <p class="people-card__name">임자이</p>
-    <p class="people-card__role">Undergraduate Intern</p>
-  </div>  
-
-  <div class="people-card">
-    <div class="people-card__avatar"><span class="people-card__initial">김</span></div>
-    <p class="people-card__name">마정미</p>
-    <p class="people-card__role">Undergraduate Intern</p>
-  </div>  
-
-  <div class="people-card">
-    <div class="people-card__avatar"><span class="people-card__initial">송</span></div>
-    <p class="people-card__name">송준영</p>
+    <div class="people-card__avatar"><span class="people-card__initial">JY</span></div>
+    <p class="people-card__name">Junyoung Song</p>
+    <p class="people-card__name-ko">송준영</p>
     <p class="people-card__role">Undergraduate Intern</p>
   </div>
 
   <div class="people-card">
     <div class="people-card__avatar"><span class="people-card__initial">김</span></div>
-    <p class="people-card__name">김우진</p>
+    <p class="people-card__name">Woojean Kim</p>
+    <p class="people-card__name-ko">김우진</p>
     <p class="people-card__role">Undergraduate Intern</p>
-  </div>
-
-
-
-
+  </div>  
 
 </div>
 
 <div class="slideshow" id="mainSlideshow">
   <img class="slideshow__slide active" src="/assets/images/2026/ISMRM2026_01.jpeg" alt="">
+  <img class="slideshow__slide" src="/assets/images/2026/20260630.jpeg" alt="">
   <img class="slideshow__slide" src="/assets/images/2025/ICMRI2025_04.jpeg" alt="">
   <img class="slideshow__slide" src="/assets/images/2025/2025-09-24-C.jpeg" alt="">
   <img class="slideshow__slide" src="/assets/images/2025/2025-09-24-B.jpeg" alt="">
@@ -171,7 +189,13 @@ classes: wide
     <p class="people-card__name">Wooseung Kim</p>
     <p class="people-card__name-ko">김우승</p>
     <p class="people-card__role">Undergraduate Intern</p>
+    <div class="people-card__links">
+      <a href="https://wooseung-kim.github.io/" title="Homepage"><i class="fas fa-globe"></i></a>
+      <a href="mailto:wooseung.kim@kaist.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   </div>
+
+
 
 
 </div>
