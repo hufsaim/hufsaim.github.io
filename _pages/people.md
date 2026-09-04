@@ -77,6 +77,13 @@ classes: wide
   </div>
 
   <div class="people-card">
+    <div class="people-card__avatar"><span class="people-card__initial">JY</span></div>
+    <p class="people-card__name">Junyoung Song</p>
+    <p class="people-card__name-ko">송준영</p>
+    <p class="people-card__role">Undergraduate Intern</p>
+  </div>
+
+  <div class="people-card">
     <div class="people-card__avatar"><span class="people-card__initial">SM</span></div>
     <p class="people-card__name">Sunmin Park</p>
     <p class="people-card__name-ko">박선민</p>
@@ -100,20 +107,6 @@ classes: wide
     <div class="people-card__avatar"><span class="people-card__initial">JM</span></div>
     <p class="people-card__name">Jeongmi Ma</p>
     <p class="people-card__name-ko">마정미</p>
-    <p class="people-card__role">Undergraduate Intern</p>
-  </div>  
-
-  <div class="people-card">
-    <div class="people-card__avatar"><span class="people-card__initial">JY</span></div>
-    <p class="people-card__name">Junyoung Song</p>
-    <p class="people-card__name-ko">송준영</p>
-    <p class="people-card__role">Undergraduate Intern</p>
-  </div>
-
-  <div class="people-card">
-    <div class="people-card__avatar"><span class="people-card__initial">김</span></div>
-    <p class="people-card__name">Woojean Kim</p>
-    <p class="people-card__name-ko">김우진</p>
     <p class="people-card__role">Undergraduate Intern</p>
   </div>  
 
@@ -174,7 +167,7 @@ classes: wide
 <div class="people-grid">
   <div class="people-card">
     <div class="people-card__avatar">
-      <span class="people-card__initial">정</span>
+      <img src="/assets/img/members/cwj.jpg" alt="Woojin Chung">
     </div>
     <p class="people-card__name">Woojin Chung</p>
     <p class="people-card__name-ko">정우진</p>
@@ -186,18 +179,17 @@ classes: wide
   </div>
 
   <div class="people-card">
-    <div class="people-card__avatar"><span class="people-card__initial">김</span></div>
+    <div class="people-card__avatar">
+      <img src="/assets/img/members/KWS.jpg" alt="Wooseung Kim">
+    </div>
     <p class="people-card__name">Wooseung Kim</p>
     <p class="people-card__name-ko">김우승</p>
-    <p class="people-card__role">Undergraduate Intern</p>
+    <p class="people-card__role">Intern (2023-2024)</p>
     <div class="people-card__links">
       <a href="https://wooseung-kim.github.io/" title="Homepage"><i class="fas fa-globe"></i></a>
       <a href="mailto:wooseung.kim@kaist.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
-
-
-
 
 </div>
 
@@ -214,5 +206,6 @@ classes: wide
     <li>2023: 권오준 (BME19), 이승주 (BME19), 최대현 (BME19), 박지현 (BME20), 조현서 (BME20), 유하경 (BME20), 권은아 (화공19)</li>
     <li>2024: 김우승 (BME18), 유창민 (BME19), 강대홍 (BME20), 이인성 (BME20), 김송희 (BME22), 이근혜 (BME21)</li>
     <li>2025: 이나림 (BME22), 정혜교 (수학22)</li>
+    <li>2026: 김우진 (BME22), 한지현 (BME22)</li>
   </ul>
 </details>
