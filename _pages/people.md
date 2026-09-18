@@ -30,7 +30,6 @@ classes: wide
     <p class="people-card__role">Ph.D. Student</p>
     <div class="people-card__links">
       <a href="https://sites.google.com/view/junghwa-kang/home" title="Homepage"><i class="fas fa-globe"></i></a>
-      <a href="mailto:kangjung9592@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
 
@@ -42,7 +41,7 @@ classes: wide
     <p class="people-card__name-ko">박다연</p>
     <p class="people-card__role">M.S. Student</p>
     <div class="people-card__links">
-      <a href="mailto:dayeon.bak@hufs.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="" title="Homepage"><i class="fas fa-globe"></i></a>
     </div>
   </div>
 
@@ -52,7 +51,7 @@ classes: wide
     <p class="people-card__name-ko">이지후</p>
     <p class="people-card__role">Undergraduate Intern</p>
     <div class="people-card__links">
-      <a href="mailto:leejihoo23@hufs.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="" title="Homepage"><i class="fas fa-globe"></i></a>
     </div>
   </div>
 
@@ -62,7 +61,7 @@ classes: wide
     <p class="people-card__name-ko">신채윤</p>
     <p class="people-card__role">Undergraduate Intern</p>
     <div class="people-card__links">
-      <a href="mailto:chaemum@hufs.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="" title="Homepage"><i class="fas fa-globe"></i></a>
     </div>
   </div>
 
@@ -72,7 +71,7 @@ classes: wide
     <p class="people-card__name-ko">신재범</p>
     <p class="people-card__role">Undergraduate Intern</p>
     <div class="people-card__links">
-      <a href="mailto:202101915@hufs.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="" title="Homepage"><i class="fas fa-globe"></i></a>
     </div>
   </div>
 
@@ -81,6 +80,9 @@ classes: wide
     <p class="people-card__name">Junyoung Song</p>
     <p class="people-card__name-ko">송준영</p>
     <p class="people-card__role">Undergraduate Intern</p>
+    <div class="people-card__links">
+      <a href="" title="Homepage"><i class="fas fa-globe"></i></a>
+    </div>
   </div>
 
   <div class="people-card">
@@ -89,7 +91,7 @@ classes: wide
     <p class="people-card__name-ko">박선민</p>
     <p class="people-card__role">Undergraduate Intern</p>
     <div class="people-card__links">
-      <a href="mailto:oniumin@hufs.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="" title="Homepage"><i class="fas fa-globe"></i></a>
     </div>
   </div>
 
@@ -99,7 +101,7 @@ classes: wide
     <p class="people-card__name-ko">김예은</p>
     <p class="people-card__role">Undergraduate Intern</p>
     <div class="people-card__links">
-      <a href="mailto:yeeunkim010@hufs.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="" title="Homepage"><i class="fas fa-globe"></i></a>
     </div>
   </div>  
 
@@ -108,6 +110,9 @@ classes: wide
     <p class="people-card__name">Jeongmi Ma</p>
     <p class="people-card__name-ko">마정미</p>
     <p class="people-card__role">Undergraduate Intern</p>
+    <div class="people-card__links">
+      <a href="" title="Homepage"><i class="fas fa-globe"></i></a>
+    </div>
   </div>  
 
 </div>
@@ -174,7 +179,6 @@ classes: wide
     <p class="people-card__role">M.S. (2026)</p>
     <div class="people-card__links">
       <a href="https://sites.google.com/view/woojinchung/" title="Homepage"><i class="fas fa-globe"></i></a>
-      <a href="mailto:woojin.chung@stonybrook.edu" title="Email"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
 
@@ -187,7 +191,6 @@ classes: wide
     <p class="people-card__role">Intern (2023-2024)</p>
     <div class="people-card__links">
       <a href="https://wooseung-kim.github.io/" title="Homepage"><i class="fas fa-globe"></i></a>
-      <a href="mailto:wooseung.kim@kaist.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
 
